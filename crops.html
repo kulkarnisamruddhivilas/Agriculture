@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All India Crop Database</title>
+    <style>
+        :root {
+            --dark-green: #1b4332;
+            --mid-green: #2d6a4f;
+            --soft-white: #f8faf8;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--soft-white);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            width: 100%;
+            background: var(--dark-green);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            width: 90%;
+            margin-top: -40px;
+            padding-bottom: 50px;
+        }
+        .info-panel {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eef2ee;
+            transition: 0.3s;
+        }
+        .info-panel:hover {
+            transform: translateY(-10px);
+            border-color: var(--mid-green);
+        }
+        .crop-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .crop-name { font-size: 22px; font-weight: 800; color: var(--dark-green); }
+        .region-tag {
+            font-size: 10px;
+            background: #e8f5e9;
+            color: var(--mid-green);
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 14px;
+        }
+        .label { color: #666; }
+        .value { font-weight: 600; color: #333; }
+        
+        .progress-bar {
+            height: 6px;
+            background: #eee;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .progress-fill { height: 100%; background: var(--mid-green); border-radius: 10px; }
+        
+        .btn-back {
+            margin-bottom: 60px;
+            padding: 12px 35px;
+            background: var(--mid-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--dark-green); }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>All India Crop Intelligence</h1>
+    <p>National Database of Major Seasonal & Commercial Crops</p>
+</div>
+
+<div class="grid-layout">
+    <div class="info-panel">
+        <div class="crop-header">
+            <span class="crop-name">Wheat</span>
+            <span class="region-tag">North India</span>
+        </div>
+        <div class="data-row"><span class="label">Season</span><span class="value">Rabi</span></div>
+        <div class="data-row"><span class="label">Major States</span><span class="value">Punjab, Haryana, UP</span></div>
+        <div class="data-row" style="border:none;"><span class="label">Soil Type</span><span class="value">Alluvial / Loamy</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+    </div>
+
+    <div class="info-panel">
+        <div class="crop-header">
+            <span class="crop-name">Rice (Paddy)</span>
+            <span class="region-tag">East & South</span>
+        </div>
+        <div class="data-row"><span class="label">Season</span><span class="value">Kharif</span></div>
+        <div class="data-row"><span class="label">Major States</span><span class="value">WB, Andhra, Tamil Nadu</span></div>
+        <div class="data-row" style="border:none;"><span class="label">Soil Type</span><span class="value">Clayey / Deep Alluvial</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+    </div>
+
+    <div class="info-panel">
+        <div class="crop-header">
+            <span class="crop-name">Cotton</span>
+            <span class="region-tag">West India</span>
+        </div>
+        <div class="data-row"><span class="label">Season</span><span class="value">Kharif / Cash</span></div>
+        <div class="data-row"><span class="label">Major States</span><span class="value">Gujarat, Maharashtra</span></div>
+        <div class="data-row" style="border:none;"><span class="label">Soil Type</span><span class="value">Black Soil (Regur)</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+    </div>
+
+    <div class="info-panel">
+        <div class="crop-header">
+            <span class="crop-name">Tea</span>
+            <span class="region-tag">North East</span>
+        </div>
+        <div class="data-row"><span class="label">Season</span><span class="value">Plantation</span></div>
+        <div class="data-row"><span class="label">Major States</span><span class="value">Assam, WB (Darjeeling)</span></div>
+        <div class="data-row" style="border:none;"><span class="label">Soil Type</span><span class="value">Acidic / Well-drained</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="info-panel">
+        <div class="crop-header">
+            <span class="crop-name">Black Pepper</span>
+            <span class="region-tag">South India</span>
+        </div>
+        <div class="data-row"><span class="label">Season</span><span class="value">Tropical</span></div>
+        <div class="data-row"><span class="label">Major States</span><span class="value">Kerala, Karnataka</span></div>
+        <div class="data-row" style="border:none;"><span class="label">Soil Type</span><span class="value">Red Laterite</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 55%;"></div></div>
+    </div>
+</div>
+
+<a href="index.html" class="btn-back">Back to Registration</a>
+
+</body>
+</html>

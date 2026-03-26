@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us - Agriculture Information System</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #0b3d0b, #145214);
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #006400, #00cc66);
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 10px black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+section {
+    padding: 25px;
+}
+
+h2 {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.member-name {
+    color: #00ffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-img {
+    width: 420px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px black;
+    transition: 0.3s;
+}
+
+.main-img:hover {
+    transform: scale(1.05);
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+}
+
+tr:hover {
+    background-color: #ccffcc;
+}
+
+
+.extra-img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+    transition: 0.3s;
+}
+
+.extra-img:hover {
+    transform: scale(1.1);
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 1;
+    min-width: 100px;
+    background: linear-gradient(45deg, #008000, #00cc66);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px black;
+}
+
+.box:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: linear-gradient(45deg, #00cc66, #00ff99);
+}
+
+ul {
+    line-height: 1.8;
+}
+
+blockquote {
+    background: #003300;
+    padding: 15px;
+    border-left: 5px solid yellow;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+footer {
+    background: #003300;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>About Us</h1>
+    <p>Agriculture Information System</p>
+</header>
+
+<section>
+
+<!-- INTRO -->
+<h2>Introduction</h2>
+<p>
+The Agriculture Information System provides useful knowledge about crops,
+farming tools, and government schemes to support farmers and students.
+</p>
+
+<!-- MAIN IMAGE -->
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" class="main-img" alt="Farm">
+
+<!-- EXTRA IMAGES -->
+<div class="img-row">
+    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" class="extra-img" alt="Crop">
+    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9" class="extra-img" alt="Tractor">
+    <!-- NEW IMAGE ADDED -->
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" class="extra-img" alt="Agriculture Field">
+</div>
+
+<!-- TEAM -->
+<h2>Our Team</h2>
+
+<div class="box-container">
+
+    <div class="box">
+        <span class="member-name">Samruddhi kulkarni</span>
+    </div>
+
+    <div class="box">
+        <span class="member-name">Vaishanavi salunkhe</span>
+    </div>
+
+    <div class="box">
+        <span class="member-name">Ashish Khedkar</span>
+    </div>
+
+    <div class="box">
+        <span class="member-name">Prem Kamble</span>
+    </div>
+
+<h2>Team Member Responsibilities</h2>
+
+<table border="2" style="width:100%; border-collapse:10px; text-align:center; background:white; color:black;">
+
+<tr style="background:green; color:white;">
+<th>Name</th>
+<th>Roll no.</th>
+<th>Page Created</th>
+</tr>
+
+<tr>
+<td>Vaishanavi Salunkhe</td>
+<td>266</td>
+<td>contact page ,action page.</td>
+</tr>
+
+
+
+<tr>
+<td>Samruddhi Kulkarni</td>
+<td>267</td>
+<td>Home Page ,menu page, css stylesheet page.</td>
+</tr>
+
+
+
+<tr>
+<td>Ashish Khedkar</td>
+<td>268</td>
+<td>about us page.</td>
+</tr>
+
+<tr>
+<td>Prem Kamble</td>
+<td>Form & Backend</td>
+<td>Contact & Registration Page</td>
+</tr>
+
+</table>
+
+
+</div>
+
+<!-- OBJECTIVES -->
+<h2>Project Objectives</h2>
+<ul>
+    <li>✔ Provide agriculture information</li>
+    <li>✔ Help farmers with modern techniques</li>
+    <li>✔ Spread awareness of schemes</li>
+</ul>
+
+<!-- FEATURES -->
+<h2>Key Features</h2>
+<ul>
+    <li> Crop Information</li>
+    <li> Farming Tools</li>
+    <li> Government Schemes</li>
+</ul>
+
+<!-- TECHNOLOGY -->
+<h2>Technologies Used</h2>
+<ul>
+    <li>HTML – Structure</li>
+    <li>CSS – Styling</li>
+</ul>
+
+<!-- FUTURE SCOPE -->
+<h2>Future Scope</h2>
+<p>
+In the future, we plan to add live weather updates, farmer login systems,
+mobile-friendly design, and online support to improve usability.
+</p>
+
+<!-- QUOTE -->
+<blockquote>
+"Agriculture is the backbone of India's economy."
+</blockquote>
+
+</section>
+
+<footer>
+    <p>© 2026 Agriculture Information System</p>
+</footer>
+
+</body>
+</html>

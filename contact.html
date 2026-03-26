@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Registration</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Form card */
+.form-card {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h2 {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+    background: green;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="form-card">
+<h2>Farmer Registration</h2>
+
+<form action="action.html">
+
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Mobile Number</label>
+<input type="tel" required>
+
+<label>Crop Type</label>
+<select required>
+<option value="">Select Crop</option>
+<option>Wheat</option>
+<option>Rice</option>
+<option>Maize</option>
+<option>Fruits</option>
+<option>Vegetables</option>
+</select>
+
+<label>Land Area (Acres)</label>
+<input type="number">
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+
+</body>
+</html>

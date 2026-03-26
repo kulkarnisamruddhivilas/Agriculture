@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Success</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-image: url("https://images.unsplash.com/photo-1464226184884-fa280b87c399");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Card */
+.success-card {
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Icon */
+.icon {
+    font-size: 50px;
+    color: green;
+}
+
+/* Button */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+a:hover {
+    background: darkgreen;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="success-card">
+
+<div class="icon">✔</div>
+
+<h2>Registration Successful!</h2>
+
+<p>Your data has been submitted successfully.</p>
+
+<a href="index.html">Back to Home</a>
+
+</div>
+
+</body>
+</html>

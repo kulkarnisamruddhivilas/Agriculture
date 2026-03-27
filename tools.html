@@ -1,32 +1,115 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
 <title>Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f6;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  color: #2e7d32;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2e7d32;
+  color: white;
+  margin-top: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
-<header><h1>Tools</h1></header>
+<header>
+  <h1>🌾 Agricultural Tools</h1>
+  <p>Essential equipment for modern farming</p>
+</header>
 
-<section>
+<section class="container">
 
-<ol>
-<li>Tractor</li>
-<li>Plough</li>
-<li>Harvester</li>
-<li>Seed Drill</li>
-<li>Sprayer</li>
-</ol>
+  <div class="card">
+    <h2>Tools List</h2>
+    <ol>
+      <li>🚜 Tractor</li>
+      <li>🌱 Plough</li>
+      <li>🌾 Harvester</li>
+      <li>🌿 Seed Drill</li>
+      <li>💧 Sprayer</li>
+    </ol>
+  </div>
 
-<img src="https://images.unsplash.com/photo-1598514982891-5c7e8c4c6b1c" alt="Tractor">
+  <div class="card">
+    <h2>Featured Tool</h2>
+    <img src="https://images.unsplash.com/photo-1598514982891-5c7e8c4c6b1c" alt="Tractor">
+  </div>
 
 </section>
 
-<footer>© Agriculture</footer>
+<footer>
+  © 2026 Agriculture | Designed with ❤️
+</footer>
 
 </body>
 </html>
-```
